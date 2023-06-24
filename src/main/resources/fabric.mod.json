@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "amtg",
+  "version": "${version}",
+
+  "name": "AMTG",
+  "description": "This mod generates a datapack based on the material properties of every block in the game. This datapack is needed to retain functionality of the Material block condition in the mod Apoli which does most of the heavy lifting in the Origins mod.",
+  "authors": [
+    "halbrg"
+  ],
+  "contact": {
+    "sources": "https://github.com/halbrg/amtg"
+  },
+
+  "license": "MIT",
+  "icon": "assets/amtg/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.halbrg.amtg.AMTG\u0024Client"
+    ],
+    "server": [
+      "com.halbrg.amtg.AMTG\u0024Server"
+    ]
+  },
+  "mixins": [
+    "amtg.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  }
+}
